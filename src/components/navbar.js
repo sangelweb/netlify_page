@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import styled from "@emotion/styled"
+import RightNavbar from '../components/right-navbar';
 
 const NavbarWrapper = styled('div')`
   #navbar {
@@ -47,6 +48,10 @@ const NavbarWrapper = styled('div')`
     padding: 10px 20px;
   }
 
+  .nav-link:hover {
+    color: var(--primary);
+  }
+
   .nav-link.active {
     border-bottom: 3px solid var(--primary);
   }
@@ -55,6 +60,12 @@ const NavbarWrapper = styled('div')`
     color: white;
     background: var(--primary);
     padding: 10px 20px;
+  }
+
+  @media (max-width: 992px) {
+    .collapse {
+      display: none;
+    }
   }
 `
 
@@ -95,7 +106,7 @@ class Navbar extends Component {
       <NavbarWrapper>
         <nav id="navbar">
           <a href="/" className="brand">Sangel<span>Web.</span></a>
-          <ul className="navbar-nav">
+          <ul className="navbar-nav collapse">
             <li className="nav-item">
               <a href="#header" className="nav-link active">Inicio</a>
             </li>
@@ -109,11 +120,16 @@ class Navbar extends Component {
               <a href="#portfolio" className="nav-link">Portafolio</a>
             </li>
           </ul>
-          <a href="#contact" className="nav-btn">Contáctenos</a>
+          <a href="#contact" className="nav-btn collapse">Contáctenos</a>
+          <RightNavbar />
         </nav>
       </NavbarWrapper>
 	  );
 	}
 }
 
-export default Navbar;
+export default () => (
+  <>
+    <Navbar />
+  </>
+)

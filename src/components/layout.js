@@ -72,7 +72,7 @@ const globalStyles = css`
     padding: var(--spacing) 0;
     height: 800px;
     margin-bottom: 30px;
-    background-color: red;
+    background-color: burlywood;
   }
   
   hr {
