@@ -1,9 +1,10 @@
 import React from "react"
 import Layout from "../components/layout"
+import Header from "../components/header"
 
 export default () => (
 	<Layout>
-		<section id="header"></section>
+		<Header />
 		<section id="services"></section>
 		<section id="aboutUs"></section>
 		<section id="portfolio"></section>
