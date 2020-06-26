@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import styled from "@emotion/styled"
-import RightNavbar from '../components/right-navbar'
+import RightNavbar from './right-navbar'
 
 const NavbarWrapper = styled('div')`
   #navbar {

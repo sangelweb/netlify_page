@@ -1,13 +1,16 @@
 import React from "react"
+import { Facebook, Twitter, Instagram } from '@material-ui/icons'
+import Container from './container'
+import HeaderSlider from './header-slider'
 
 export default () => (
   <header id="header">
-    <div className="container">
+    <Container>
       <div className="header-box">
         <div className="col-6">
           <div className="wrapper">
             <span className="tagline">Diseño y Desarrollo Web</span>
-            <h1 className="web-brand">Sangel<span className="pink">Web.</span></h1>
+            <h1 className="brand">Sangel<span>Web.</span></h1>
             <p>
               In a more general sense, the core principles will require a vast
               knowledge. Conversely, the possibility of achieving
@@ -16,33 +19,15 @@ export default () => (
           </div>
           <div className="social">
             <span>Síguenos en</span>
-            <a href><i className="fa fa-facebook" /></a>
-            <a href><i className="fa fa-twitter" /></a>
-            <a href><i className="fa fa-instagram" /></a>
+            <a href><Facebook /></a>
+            <a href><Twitter /></a>
+            <a href><Instagram /></a>
           </div>
         </div>
         <div className="offset-2 col-4">
-          <div className="swiper-container">
-            <div className="swiper-wrapper">
-              <div className="swiper-slide">
-                <img src="img/Sangelweb.png" alt />
-              </div>
-              <div className="swiper-slide">
-                <img src="img/first-web.png" alt />
-              </div>
-              <div className="swiper-slide">
-                <img src="img/MacBook-Pro-15@0,5x.png" alt />
-              </div>
-            </div>
-          </div>
-          <div className="slider-nav">
-            <span className="swiper-pages" />
-            <hr />
-            <i className="fa fa-angle-left swiper-btn-prev" />
-            <i className="fa fa-angle-right swiper-btn-next" />
-          </div>
+          <HeaderSlider />
         </div>
       </div>
-    </div>
+    </Container>
   </header>
 )
