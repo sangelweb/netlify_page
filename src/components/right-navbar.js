@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import styled from '@emotion/styled'
+import MenuRoundedIcon from '@material-ui/icons/MenuRounded'
 
 const RightNavbarWrapper= styled('div')`
   .right-navbar {
@@ -39,7 +40,6 @@ const RightNavbarWrapper= styled('div')`
 const NavbarBtn = styled('button')`
   position: relative;
   color: white;
-  height: 20px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -52,13 +52,6 @@ const NavbarBtn = styled('button')`
   &:focus {
     outline: 0;
   }
-
-  div {
-    background-color: #fff;
-    width: 26px;
-    height: 3px;
-    border-radius: 100px;
-  }
 `
 
 const RightNavbar = () => {
@@ -67,9 +60,7 @@ const RightNavbar = () => {
   return (
     <RightNavbarWrapper open={open}>
       <NavbarBtn open={open} onClick={() => setOpen(!open)}>
-        <div></div>
-        <div></div>
-        <div></div>
+        <MenuRoundedIcon fontSize="large" />
       </NavbarBtn>
       <ul className="right-navbar">
         <li className="right-nav-item">

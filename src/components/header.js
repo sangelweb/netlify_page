@@ -2,44 +2,44 @@ import React from "react"
 
 export default () => (
   <header id="header">
-    <div class="container">
-      <div class="header-box">
-        <div class="col-6" data-aos="fade-right">
-          <div class="wrapper">
-            <span class="tagline">Diseño y Desarrollo Web</span>
-            <h1 class="web-brand">Sangel<span class="pink">Web.</span></h1>
+    <div className="container">
+      <div className="header-box">
+        <div className="col-6">
+          <div className="wrapper">
+            <span className="tagline">Diseño y Desarrollo Web</span>
+            <h1 className="web-brand">Sangel<span className="pink">Web.</span></h1>
             <p>
               In a more general sense, the core principles will require a vast
               knowledge. Conversely, the possibility of achieving
             </p>
             <hr />
           </div>
-          <div class="social">
+          <div className="social">
             <span>Síguenos en</span>
-            <a href=""><i class="fa fa-facebook"></i></a>
-            <a href=""><i class="fa fa-twitter"></i></a>
-            <a href=""><i class="fa fa-instagram"></i></a>
+            <a href><i className="fa fa-facebook" /></a>
+            <a href><i className="fa fa-twitter" /></a>
+            <a href><i className="fa fa-instagram" /></a>
           </div>
         </div>
-        <div class="offset-2 col-4" data-aos="fade-left">
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="img/Sangelweb.png" alt="" />
+        <div className="offset-2 col-4">
+          <div className="swiper-container">
+            <div className="swiper-wrapper">
+              <div className="swiper-slide">
+                <img src="img/Sangelweb.png" alt />
               </div>
-              <div class="swiper-slide">
-                <img src="img/first-web.png" alt="" />
+              <div className="swiper-slide">
+                <img src="img/first-web.png" alt />
               </div>
-              <div class="swiper-slide">
-                <img src="img/MacBook-Pro-15@0,5x.png" alt="" />
+              <div className="swiper-slide">
+                <img src="img/MacBook-Pro-15@0,5x.png" alt />
               </div>
             </div>
           </div>
-          <div class="slider-nav">
-            <span class="swiper-pages"></span>
+          <div className="slider-nav">
+            <span className="swiper-pages" />
             <hr />
-            <i class="fa fa-angle-left swiper-btn-prev"></i>
-            <i class="fa fa-angle-right swiper-btn-next"></i>
+            <i className="fa fa-angle-left swiper-btn-prev" />
+            <i className="fa fa-angle-right swiper-btn-next" />
           </div>
         </div>
       </div>
